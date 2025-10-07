@@ -13,9 +13,6 @@ from ...options import Options
 # https://learn.microsoft.com/en-us/windows/win32/sysinfo/operating-system-version
 # https://learn.microsoft.com/en-us/microsoft-edge/web-platform/how-to-detect-win11
 VERSIONS: List[WindowsVersion] = [
-    WindowsVersion(Version(major=6, minor=1), ch_platform=Version(major=0)),
-    WindowsVersion(Version(major=6, minor=2), ch_platform=Version(major=0)),
-    WindowsVersion(Version(major=6, minor=3), ch_platform=Version(major=0)),
     WindowsVersion(Version(major=10, minor=0), ch_platform=Version(major=10)),
     WindowsVersion(Version(major=10, minor=0), ch_platform=Version(major=(13, 15))),
 ]
