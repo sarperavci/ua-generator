@@ -50,7 +50,7 @@ class ClientHints:
         return str(self.__generator.platform_version)
 
     def get_brands(self, full_version_list: bool = False) -> list:
-        brand_list = [{'brand': 'Not A(Brand', 'version': '99.0.0.0' if full_version_list else '99'}]
+        brand_list = [{'brand': 'Not;A=Brand', 'version': '99.0.0.0' if full_version_list else '99'}]
 
         if self.__generator.browser == 'chrome':
             browser_version = self.get_browser_version(full_version=full_version_list)
